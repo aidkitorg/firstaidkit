@@ -1,16 +1,18 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 import type { Applicant } from './api/lib/applicant'
 
 const Home: NextPage = () => {
   const [applicants, setApplicants] = useState<Applicant[]>([])
 
-  async function getAllApplicants() {
-    setApplicants(await (await fetch('/api/all')).json() as Applicant[]);
-  }
+  useEffect(() => {
+    (async () => {
+      setApplicants(await (await fetch('/api/all')).json() as Applicant[]);
+    })();
+  });
 
   return (
     <div className={styles.container}>
@@ -23,7 +25,6 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           (First) AidKit Task
         </h1>
-        <button onClick={getAllApplicants}>Load Applicants</button>
         <ul className={styles['applicant-list']}>
           {applicants.map(a => <li className={styles.applicant} key={a.name}>
             <div className={styles.name}>{a.name}</div>

@@ -50,7 +50,11 @@ const DUMMY_APPLICANTS: Applicant[] = [
 
 (async () => {
     // Wipe and reset the DB
-    fs.unlinkSync('database.db');
+    try {
+        fs.unlinkSync('database.db');
+    } catch (e) {
+        // Probably didn't exist yet
+    }
     const db = await getDB();
     await db.exec(`
         create table applicant (
