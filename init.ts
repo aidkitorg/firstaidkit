@@ -17,6 +17,34 @@ const DUMMY_APPLICANTS: Applicant[] = [
     {
         name: 'Carol',
         phone: '3335553333'
+    },
+    {
+        name: 'Dave',
+        phone: '4445554444'
+    },
+    {
+        name: 'Elea',
+        phone: '5555555555'
+    },
+    {
+        name: 'Frank',
+        phone: '6665556666'
+    },
+    {
+        name: 'Gertrude',
+        phone: '7775557777'
+    },
+    {
+        name: 'Harry',
+        phone: '8885558888'
+    },
+    {
+        name: 'Ingrid',
+        phone: '9995559999'
+    },
+    {
+        name: 'John',
+        phone: '0005550000'
     }
 ];
 

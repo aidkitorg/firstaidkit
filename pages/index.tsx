@@ -21,11 +21,14 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          First Aid Kit!
+          (First) AidKit Task
         </h1>
         <button onClick={getAllApplicants}>Load Applicants</button>
-        <ul>
-          {applicants.map(a => <li key={a.name}>{a.name} - {a.phone}</li>
+        <ul className={styles['applicant-list']}>
+          {applicants.map(a => <li className={styles.applicant} key={a.name}>
+            <div className={styles.name}>{a.name}</div>
+            <div className={styles.phone}>{a.phone}</div>
+          </li>
           )}
         </ul>
       </main>
