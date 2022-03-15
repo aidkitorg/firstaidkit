@@ -6,18 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "init-db": "ts-node init"
   },
   "dependencies": {
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sqlite": "^4.0.25",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
     "@types/react": "17.0.40",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
+    "ts-node": "^10.7.0",
     "typescript": "4.6.2"
   }
 }
