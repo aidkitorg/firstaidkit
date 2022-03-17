@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     (async () => {
       setApplicants(await (await fetch('/api/all')).json() as Applicant[]);
     })();
-  });
+  }, []);
 
   return (
     <div className={styles.container}>
