@@ -23,9 +23,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/13/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/all](https://nextjs.org/docs/13/pages/building-your-application/routing/api-routes). This endpoint can be edited in `pages/api/all.ts`.
+[API routes](https://nextjs.org/docs/13/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/all](http://localhost:3000/api/all). This endpoint can be edited in `pages/api/all.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/13/pages/building-your-application/routing/api-routes) instead of React pages.
 
 Styles are imported in a similar way to typescript imports, see the import at the top of `index.tsx` and how it's use in the corresponding React components.
 
