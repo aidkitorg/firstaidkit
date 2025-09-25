@@ -15,8 +15,8 @@ As a database, we're using sqlite. Sqlite is a simple SQL database that is store
 First, install the dependencies and then run the development server:
 
 ```bash
-yarn install 
-yarn dev
+bun install 
+bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
